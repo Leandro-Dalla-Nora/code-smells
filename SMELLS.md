@@ -78,6 +78,8 @@ Isto ocorre pois é muito mais fácil adicionar o que falta em uma classe já ex
 
 Seus problemas consistem em: dificuldade na leitura e entendimento do código, dificuldade em editar e testar o código.
 
+[Exemplo](https://makolyte.com/refactoring-the-large-class-code-smell/)
+
 
 ## Divergent Change
 
@@ -96,12 +98,16 @@ difíceis de encontrar, e é fácil perder uma importante mudança.
 * A mudança divergente é uma classe que sofre muitos tipos de mudanças, e a cirurgia de espingarda é uma mudança que
   altera muitas classes.
 
+[Exemplo](https://luzkan.github.io/smells/shotgun-surgery)
+
 ## Feature Envy
 
 O ponto principal dos objetos é que eles são uma técnica para empacotar dados com os processos usados nesses dados. Um
 smell clássico é um método que parece mais interessado em uma classe diferente daquela que ele realmente está dentro. O
 foco mais comum da envy são os dados. Perdemos a conta das vezes
 vimos um método que invoca meia dúzia de métodos de obtenção em outro objeto para calcular algum valor.
+
+[Exemplo](https://www.andrecelestino.com/feature-envy/)
 
 ## Data Clumps
 
