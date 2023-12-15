@@ -116,6 +116,8 @@ ou quatro itens de dados juntos em vários lugares: campos em algumas classes, p
 métodos. Grupos de dados que ficam juntos realmente deveriam ser transformados em seu próprio objeto. O primeiro passo é
 procurar onde os aglomerados aparecem como campos.
 
+[Exemplo](https://luzkan.github.io/smells/data-clump)
+
 ## Primitive Obsession
 
 Tipos primitivos são seus blocos de construção. Os registros sempre trazem uma certa quantidade de despesas gerais. Eles
@@ -123,16 +125,22 @@ podem significar tabelas em um banco de dados ou podem ser difíceis de criar qu
 coisas. Uma das coisas valiosas sobre os objetos é que eles borram ou até quebram a linha entre o primitivo e as turmas
 maiores.
 
+[Exemplo](https://luzkan.github.io/smells/primitive-obsession)
+
 ## Switch Statements
 
 O problema com as instruções switch é essencialmente o da duplicação. Muitas vezes você encontra a mesma instrução
 switch espalhada por um programa em lugares diferentes. Se você adicionar uma nova cláusula para o switch, você precisa
 encontrar todos esses switch, instruções e alterá-los.
 
+[Exemplo](https://makolyte.com/refactoring-the-switch-statement-code-smell/)
+
 ## Parallel Inheritance Hierarchies
 
 Toda vez que existir uma subclasse de uma classe, vai ter que ter uma subclasse de outra. Você pode reconhecer esse
 smell porque os prefixos dos nomes de classe em uma hierarquia são os mesmos que os prefixos em outra hierarquia.
+
+[Exemplo](https://luzkan.github.io/smells/parallel-inheritance-hierarchies)
 
 ## Lazy Class
 
@@ -142,22 +150,28 @@ Classes que não estão sendo bem utilizadas precisam ser eliminadas.
 
 Exclua métodos ou classes em que os únicos usuários são casos de teste (não utilizados).
 
+[Exemplo](https://luzkan.github.io/smells/speculative-generality)
+
 ## Temporary Field
 
 Objeto no qual uma variável de instância é definida apenas em determinadas circunstâncias. Exemplo: um algoritmo precisa
 de várias variáveis. Como o implementador não queria passar uma lista enorme de parâmetros, ele os colocou em campos,
 que só são válidos durante o algoritmo, depois tornam-se inúteis.
 
+[Exemplo](https://luzkan.github.io/smells/temporary-field)
+
 ## Message Chains
 
-Quando um cliente solicita vários objetos, como uma longa linha de métodos getThis, ou como uma sequência de temps, o
-cliente está acoplado à estrutura da navegação.
+Quando um cliente solicita vários objetos, como uma longa linha de métodos getThis sequenciais, ou como uma sequência de temps, o cliente está acoplado à estrutura da navegação.
+
+[Exemplo](https://refactoring.guru/smells/message-chains)
 
 ## Middle Man
 
-Uma das principais características dos objetos é o encapsulamento - ocultando detalhes internos do resto do mundo. O
-encapsulamento geralmente vem com delegação. No entanto, isso pode ir longe demais. Você olha para a interface de uma
+Uma das principais características dos objetos é o encapsulamento - ocultando detalhes internos do resto do mundo. O encapsulamento geralmente vem com delegação. No entanto, isso pode ir longe demais. Você olha para a interface de uma
 classe e descobre que metade dos métodos estão delegando a esta outra classe.
+
+[Exemplo](https://luzkan.github.io/smells/middle-man)
 
 ## Inappropriate Intimacy
 
