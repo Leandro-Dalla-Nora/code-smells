@@ -179,10 +179,14 @@ classe e descobre que metade dos métodos estão delegando a esta outra classe.
 ser puritanos quando se trata de pessoas, mas achamos que nossas aulas devem seguir regras estritas e puritanas. As
 classes super intimistas precisam ser desfeitas como os amantes eram nos tempos antigos.
 
+[Exemplo](https://refactoring.guru/pt-br/smells/inappropriate-intimacy)
+
 ## Alternative Classes with Different Interfaces
 
 Use Rename Method em qualquer método que faça a mesma coisa, mas tenha assinaturas diferentes para o que eles fazem.
 Muitas vezes isso não vai longe o suficiente. Nestes casos as classes ainda não estão fazendo o suficiente.
+
+[Exemplo](https://luzkan.github.io/smells/alternative-classes-with-different-interfaces)
 
 ## Incomplete Library Class
 
@@ -199,6 +203,8 @@ essas classes podem ter campos públicos.
 As classes de dados são como crianças. Eles estão bem como ponto de partida, mas para participar como um adulto objeto,
 eles precisam assumir alguma responsabilidade.
 
+[Exemplo](https://code-smells.com/dispensables/data-class)
+
 ## Refused Request
 
 As subclasses herdam os métodos e dados de seus pais. Mas e se eles não quiserem ou precisarem do que lhes é dado? Eles
@@ -207,6 +213,7 @@ estiver causando confusão e problemas, siga o conselho tradicional. No entanto,
 todo. Nove em cada dez vezes este cheiro é muito fraco para ser vale a pena limpar. O cheiro de legado recusado é muito
 mais forte se a subclasse estiver reutilizando o comportamento, mas não deseja suportar a interface da superclasse.
 
+[Exemplo](https://luzkan.github.io/smells/refused-bequest)
 ## Comments
 
 A razão pela qual mencionamos comment aqui é que os comentários costumam ser usados como desodorante. É surpreendente a
